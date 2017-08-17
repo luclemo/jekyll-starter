@@ -4,7 +4,7 @@
     {% for p in navigation_pages %}
       {% if p.nav_order %}
         <li>
-          <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+          <a href="{{ p.url | prepend: site.baseurl }}" {% if p.url == page.url %}class="active"{% endif %}>
             {{ p.title }}
           </a>
         </li>

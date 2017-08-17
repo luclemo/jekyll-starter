@@ -1,0 +1,24 @@
+// Preserve some sanity
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+// Basic body styles
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// Reset some basic elements
+pre, hr, dl, dd, figure {
+    margin: 0;
+    padding: 0;
+}
+
+// Images
+img {
+    max-width: 100%;
+}

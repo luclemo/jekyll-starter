@@ -1,0 +1,56 @@
+// ----------------------------------------------
+// Breakpoints
+// ----------------------------------------------
+ @mixin breakpoint($point) {
+   @if $point == jumbo {
+     @media (min-width: 92.5em) { @content ; } // 1480px +
+  }
+   @else if $point == desktop {
+     @media (max-width: 81.1875em) { @content ; } // 1299px -
+  }
+   @else if $point == mindesktop {
+     @media (min-width: 81.25em) { @content ; } // 1300px +
+  }
+   @else if $point == laptop {
+     @media (max-width: 63.9375em) { @content ; } // 1023px -
+  }
+   @else if $point == minlaptop {
+     @media (min-width: 64em) { @content ; } // 1024px  +
+  }
+    @else if $point == tablet {
+     @media (max-width: 49.9375em) { @content ; } // 799px -
+  }
+    @else if $point == mintablet {
+     @media (min-width: 50em) { @content ; } // 800px +
+  }
+   @else if $point == phablet {
+     @media (max-width: 37.4375em)  { @content ; } // 599px -
+  }
+   @else if $point == minphablet {
+     @media (min-width: 37.5em)  { @content ; } // 600px +
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 27em)  { @content ; } // 432px -
+  }
+}
+
+// ----------------------------------------------
+// Accessibility
+// ----------------------------------------------
+@mixin visually-hidden() {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+// ----------------------------------------------
+// Animations & Effects
+// ----------------------------------------------
+@mixin transition ($prop:all, $speed:0.2s, $timefun:ease-in-out) {
+  transition: $prop $speed $timefun;
+}

@@ -1,0 +1,43 @@
+body {
+	color: $color__text;
+	font-family: $font__primary;
+	line-height: $line-height;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Headers -------------------------------
+h1 {
+  font-family: $font__secondary;
+  font-weight: 700;
+}
+
+h2{
+  font-family: $font__secondary;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: $font__secondary;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: $font__secondary;
+  font-weight: 700;
+}
+
+// Typographic styles -------------------
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+// List ---------------------------------
+ul,
+ol {
+	margin-left: 0;
+}

@@ -1,0 +1,40 @@
+# This config file is meant for settings that affect your whole site. For technical reasons, this file is *NOT* reloaded automatically. If you change this file, please restart the server process. Global Values which you edit often are found in _data/global.yml
+
+# Serving
+port:        4000
+host:        127.0.0.1
+baseurl:     "" # does not include hostname
+livereload:  true # If set to false, you will need to run --livereload after 'jekyll serve'
+#incremental: true # Will only rebuild changed files. Remove if you run into issues.
+
+# Outputting
+permalink: /blog/:title/
+
+# Build settings ------------------
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown
+sass:
+  style: compressed
+highlighter: rouge
+autoprefixer:
+  browsers:
+  - last 2 versions
+
+# Inlcudes & excludes
+include:
+- _pages # custom directory to organize pages
+- _scripts # custom directory to organize js
+- _img
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins
+plugins:
+- jekyll-autoprefixer

@@ -1,0 +1,52 @@
+// ----------------------------------------------
+// inline links
+// ----------------------------------------------
+a {
+    color: $color__primary;
+    @include transition();
+    &:hover {
+        color: darken($color__primary,10%);
+    }
+}
+
+
+// ----------------------------------------------
+// button links
+// ----------------------------------------------
+.button {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 1em 3em;
+  cursor: pointer;
+  color: white;
+  background: $color__grey;
+  @include transition();
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: darken($color__grey,5%);
+    color: white;
+  }
+
+  &--primary {
+    background: $color__primary;
+    
+    &:hover,
+    &:focus,
+    &:active {
+      background: darken($color__primary,5%);
+    }
+  }
+
+  &--secondary {
+    background: $color__secondary;
+    
+    &:hover,
+    &:focus,
+    &:active {
+      background: darken($color__secondary,5%);
+    }
+  }
+}

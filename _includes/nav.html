@@ -1,0 +1,14 @@
+<nav>
+  <ul>
+    {% assign navigation_pages = site.pages | sort: 'nav_order' %}
+    {% for p in navigation_pages %}
+      {% if p.nav_order %}
+        <li>
+          <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+            {{ p.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

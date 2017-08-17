@@ -5,7 +5,7 @@
   <!-- Plain Description -->
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.data.global.title }}</title>
   <meta name="description" content="{% if page.summary %}{{page.summary}}{% else %}{{site.data.global.description}}{% endif %}">
-  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="icon" type="image/png" href={{ "/favicon.png" | prepend: site.baseurl }}>
 
   <!-- Facebook -->
   <meta property="og:type" content="website" />

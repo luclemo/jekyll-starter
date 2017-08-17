@@ -8,7 +8,7 @@ description: > # this lets us write this block in multiple lines
   Write an awesome description for your new site here. You can edit this
   line in _data/global.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-url: "http://domain.co" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 
 # Social settings
 social_img: /img/social.png # default image for twitter cards etc

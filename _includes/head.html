@@ -11,16 +11,16 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{% if page.social_title %}{{page.social_title}}{% else %}{{page.title}} | {{ site.data.global.title }} {% endif %}" />
   <meta property="og:description" content="{% if page.summary %}{{page.summary}}{% else %}{{site.data.global.description}}{% endif %}" />
-  <meta property="og:image" content="{% if page.social_img %}{{site.data.global.url}}{{page.social_img}}{% else %}{{site.data.global.url}}{{site.data.global.social_img}}{% endif %}" />
-  <meta property="og:url" content="{{site.data.global.url}}{{page.url}}" />
+  <meta property="og:image" content="{% if page.social_img %}{{site.url}}{{page.social_img}}{% else %}{{site.url}}{{site.data.global.social_img}}{% endif %}" />
+  <meta property="og:url" content="{{site.url}}{{page.url}}" />
   <meta property="og:site_name" content="{{ site.data.global.title }} " />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{% if page.social_title %}{{page.social_title}}{% else %}{{page.title}} | {{ site.data.global.title }} {% endif %}">
   <meta name="twitter:description" content="{% if page.summary %}{{page.summary}}{% else %}{{site.data.global.description}}{% endif %}">
-  <meta name="twitter:image" content="{% if page.social_img %}{{site.data.global.url}}{{page.social_img}}{% else %}{{site.data.global.url}}{{site.data.global.social_img}}{% endif %}">
-  <meta name="twitter:url" content="{{site.data.global.url}}{{page.url}}">
+  <meta name="twitter:image" content="{% if page.social_img %}{{site.url}}{{page.social_img}}{% else %}{{site.url}}{{site.data.global.social_img}}{% endif %}">
+  <meta name="twitter:url" content="{{site.url}}{{page.url}}">
 
   <!-- RSS stuff -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

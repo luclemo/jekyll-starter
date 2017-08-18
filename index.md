@@ -12,6 +12,8 @@ nav_order: 1
 
 **_Super_ stripped down project template for jekyll ✌️**
 
+YOYO
+
 ## What does this include?
 
 This is _not_ a theme. It's just a directory with some good starter bits. It comes with:

@@ -1,19 +1,16 @@
 ################################################################
 # This is the PRODUCTION config file.
 # 
-# Make sure to change (or remove) the baseurl and url settings!
+# Run this command when ready to deploy/upload to your server:
+# `jekyll build`
 # 
 # This file is *NOT* rebuilt automatically.
 # If you change this file, please restart the server process
 ###############################################################
 
 # Serving
-baseurl: "/jekyll-starter"
+baseurl: "/jekyll-starter" # is your site served from subdirectory?
 url: "https://luclemo.github.io" # the hostname & protocol for your site
-
-# livereload
-livereload: true # Watch your browser reload upon changes
-#incremental: true # Will only rebuild changed files. Can be buggy so  ¯\_(ツ)_/¯.
 
 # Outputting
 permalink: /blog/:title/

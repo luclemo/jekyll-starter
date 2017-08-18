@@ -12,7 +12,7 @@ nav_order: 1
 
 **_Super_ stripped down project template for jekyll ✌️**
 
-LINE FOR TESTING
+LINE FOR TESTING : {{ site.url }}
 
 ## What does this include?
 

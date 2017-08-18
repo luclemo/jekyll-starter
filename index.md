@@ -4,24 +4,19 @@ title: "Home"
 nav_order: 1
 ---
 <style>
-  h2 { margin-top: 2em; padding-top: 1em; border-top: 1px solid lightgrey;}
+  h2 { margin-top: 3em;}
   h3 { margin-top: 1.2em}
 </style>
 
 # {{site.data.global.title}}
 
-**_Super_ stripped down project template for jekyll ✌️**
+**Super stripped down project template for jekyll ✌️**
+
+Find it here: [https://github.com/luclemo/jekyll-starter](https://github.com/luclemo/jekyll-starter)
 
 ## What does this include?
 
-This is _not_ a theme. It's just a directory with some good starter bits. It comes with:
-
-- A very basic file structure (seriously you won't have to strip out much) 📂
-- Minimal styling 🎨
-    *   A few SCSS variables (colors & fonts)
-    *   A few handy mixins (like really, there are 3)
-    *   A bunch of empty sass partials for organization. Use 'em or don't.
-- Live reload and autoprefixer 👯
+This is _not_ a theme. It's just a directory with some good starter bits, minimal styles, and built-in live reload & autoprefixing.
 
 ## What do you mean _minimal_ styling?
 

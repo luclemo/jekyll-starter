@@ -4,13 +4,13 @@
 
 Nope this isn't a theme! I've been exploring jekyll lately and a few things annoy me:
 
-1. Starting a new project via `jekyll new [my-project-name]` gives me a starter theme that's way to bloated.
+1. Starting a new project via `jekyll new [my-project-name]` gives me a starter theme that's way too bloated.
 2. On the flip side, using `jekyll new [my-project-name] --blank` doesn't even give me a `config.yml` file.
-3. Also, no live reload or autoprefixing out of the box.
+3. In both cases, no livereload or autoprefixing out of the box.
 
 You can check it out here: [https://luclemo.github.io/jekyll-starter/](https://luclemo.github.io/jekyll-starter/)
 
-#### OMG it's so ugly! 😱
+### OMG it's so ugly! 😱
 
 Yup. that's the point. Now go make it 💅
 
@@ -18,21 +18,21 @@ Yup. that's the point. Now go make it 💅
 
 This is _not_ a theme. It's just a directory with some good starter bits:
 
-#### A very basic file structure 📂
+### A very basic file structure 📂
 
-- I've included stuff nearly every project needs: a `404` and `about` page.
+- I've included stuff nearly every project needs: a `404` and `about` page and useful config stuff.
 - Blog structure and permalinks are a pain to set up so I've included it.  
-Don't want it? Just delete the `_posts` directory and `blog.md` file. Done. 
+Don't want/need a blog it? Just delete the `_posts` directory and `blog.md` file. Done. 
 
-#### Minimal styling 🎨
+### Minimal styling 🎨
 
 - A few SCSS variables (colors & fonts)
 - A few handy mixins (like really, there are 3)
 - A bunch of empty sass partials for organization. Use 'em or don't.
 
-#### Do I need Gulp … Grunt … PostCSS … la-la-la ? 👯
+### Do I need Gulp … Grunt … PostCSS … la-la-la ? 👯
 
-- Nope. If all you're after is live reload and autoprefixing, it just works out of the box. However, you can definitely use all of the above instead.
+- Nope. If all you're after is livereload and autoprefixing, it just works out of the box. However, you can definitely use all of the above instead.
 
 ## Getting started 🚦
 
@@ -40,21 +40,21 @@ Don't want it? Just delete the `_posts` directory and `blog.md` file. Done.
 
 You will need some _very_ minimal command line abilities. You will also need to know what jekyll is and have it installed on your machine. A few good resources for each: [Command Line Power User](https://commandlinepoweruser.com/) and [Jekyll docs](https://jekyllrb.com/docs/home/).
 
-#### Let's get this project to your machine ⬇️
+### Let's get this project to your machine ⬇️
 
 1. Move into directory of your choice:
 
     ```text
-    cd [directory-of-your-choice]
+    cd path/to/directory-of-your-choice
     ```
 
-2. Create the project in that directory:
+2. Create the project inside that directory:
 
     ```text
     git clone https://github.com/luclemo/jekyll-starter.git
     ```
 
-#### Working locally 👩‍💻
+### Working locally 👩‍💻
 
 Fire it up in your browser:
 
@@ -66,7 +66,7 @@ That's it! Just do your thing. Edit your CSS, add pages or posts, create layouts
 
 ## Ready to deploy? 🚀
 
-#### Edit these two values in `_config.yml`
+### Edit these two values in `_config.yml`
 
 1. If your site will be served from a subdirectory, add it here:
 
@@ -87,15 +87,15 @@ That's it! Just do your thing. Edit your CSS, add pages or posts, create layouts
     ```
 
 
-#### Build step for production:
+### Build step for production:
 
-In order to rebuild your files in `_site` with the productions details:
+Rebuild your files in `_site` with your new productions details:
 
 ```text
 jekyll build
 ```
 
-#### Getting it on your server
+### Getting it on your server
 
 Just upload the content of `_site` directory via FTP or use GitHub Pages or whatever you want.
 

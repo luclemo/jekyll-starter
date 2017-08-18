@@ -12,8 +12,6 @@ nav_order: 1
 
 **_Super_ stripped down project template for jekyll ✌️**
 
-LINE FOR TESTING : {{ site.url }}
-
 ## What does this include?
 
 This is _not_ a theme. It's just a directory with some good starter bits. It comes with:

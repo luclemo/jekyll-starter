@@ -1,5 +1,7 @@
 # Stripped Down Jekyll Starter Project
 
+<img src="img/github-screenshot.png" height="auto" width="100%" alt="jekyll-starter">
+
 ## Oh no, not another theme… 🙄
 
 Nope this isn't a theme! I've been exploring jekyll lately and a few things annoy me:
@@ -8,11 +10,11 @@ Nope this isn't a theme! I've been exploring jekyll lately and a few things anno
 2. On the flip side, using `jekyll new [my-project-name] --blank` doesn't even give me a `config.yml` file.
 3. In both cases, no livereload or autoprefixing out of the box.
 
-You can check it out here: [https://luclemo.github.io/jekyll-starter/](https://luclemo.github.io/jekyll-starter/)
+You can think of this as the Goldilocks of starter projects and you can check it out here: [https://luclemo.github.io/jekyll-starter/](https://luclemo.github.io/jekyll-starter/)
 
 ### OMG it's so ugly! 😱
 
-Yup. that's the point. Now go make it 💅
+Yup. that's the point. Now go make it gorgeous.
 
 ## Features 🍬
 
@@ -32,7 +34,7 @@ Don't want/need a blog it? Just delete the `_posts` directory and `blog.md` file
 
 ### Do I need Gulp … Grunt … PostCSS … la-la-la ? 👯
 
-- Nope. If all you're after is livereload and autoprefixing, it just works out of the box. However, you can definitely use all of the above instead.
+- Nope. If all you're after is livereload and autoprefixing, it just works out of the box. However, you can definitely add/replace with your tooling of choice.
 
 ## Getting started 🚦
 
@@ -67,6 +69,8 @@ That's it! Just do your thing. Edit your CSS, add pages or posts, create layouts
 ## Ready to deploy? 🚀
 
 ### Edit these two values in `_config.yml`
+
+You will only need to do this once:
 
 1. If your site will be served from a subdirectory, add it here:
 

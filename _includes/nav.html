@@ -1,6 +1,5 @@
 <nav>
   <ul>
-  <p>test line</p>
     {% assign navigation_pages = site.pages | sort: 'nav_order' %}
     {% for p in navigation_pages %}
       {% if p.nav_order %}

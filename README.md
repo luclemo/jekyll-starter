@@ -12,6 +12,8 @@ Nope this isn't a theme! I've been exploring jekyll lately and a few things anno
 
 You can think of this as the Goldilocks of starter projects and you can check it out here: [https://luclemo.github.io/jekyll-starter/](https://luclemo.github.io/jekyll-starter/)
 
+You can also [read more about why I made this](https://medium.com/@luclemo/using-jekyll-for-rapid-prototyping-31d5419b8d94).
+
 **OMG it's so ugly!** 😱
 
 Yup. that's the point. Now go make it gorgeous.

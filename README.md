@@ -49,21 +49,21 @@ Nope. If all you're after is livereload and autoprefixing, it just works out of 
 
 You will need some _very_ minimal command line abilities. You will also need to know what jekyll is and have it installed on your machine. A few good resources for each: [Command Line Power User](https://commandlinepoweruser.com/) and [Jekyll docs](https://jekyllrb.com/docs/home/).
 
-### Let's get this project to your machine ⬇️
+### 1. Let's get this project to your machine ⬇️
 
-1. Move into directory of your choice:
+Move into directory of your choice:
 
-    ```text
-    cd path/to/directory-of-your-choice
-    ```
+```text
+cd path/to/directory-of-your-choice
+```
 
-2. Create the project inside that directory:
+Create the project inside that directory:
 
-    ```text
-    git clone https://github.com/luclemo/jekyll-starter.git
-    ```
+```text
+git clone https://github.com/luclemo/jekyll-starter.git
+```
 
-### Working locally 👩‍💻
+### 2. Working locally 👩‍💻
 
 Fire up your project:
 
@@ -73,13 +73,25 @@ jekyll serve --config _config.yml,_config_dev.yml
 
 Files are served at `localhost:4000` from the `_site` directory.
 
-That's it! Just do your thing. Edit your CSS, add pages or posts, create layouts etc. Your browser will automatically reload to show you your changes.
+Your browser will automatically reload to show you your changes on save.
 
-### Editing files
+#### Development environment
 
-#### AutoReload
+Add development-specific settings to `_config_dev.yml` (these override `_config.yml`)
 
-All changes are compiled and auto-reloaded on save except edits to `_config.yml` and `_config_dev.yml`. You must restart the server when you change these files.
+I have included a handy development variable to use anywhere in your logic:
+
+```text
+{% if environment == development %}
+   
+    Do things only locally!
+
+{% endif %}
+```
+
+**Note about autoreload:**  
+All changes are compiled and auto-reloaded on save except edits to `_config.yml` and `_config_dev.yml`.  
+Restart the server when you change these files.
 
 ---
 

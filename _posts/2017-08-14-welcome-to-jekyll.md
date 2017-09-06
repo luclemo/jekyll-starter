@@ -17,7 +17,7 @@ Take a look at the source for this post to get an idea about how it works.
 If you are not building a blog, just remove the following from your project:
 
 - directory: `_posts`
-- page: `_pages/blog.md`
+- page: `_pages/blog.html`
 
 Easiest problem ever solved.
 

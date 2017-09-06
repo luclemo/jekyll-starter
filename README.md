@@ -39,7 +39,8 @@ I've included a few things common to many projects:
 
 ### Do I need Gulp … Grunt … PostCSS … la-la-la ? 👯
 
-Nope. If all you're after is livereload and autoprefixing, it just works out of the box. However, you can definitely add/replace with your tooling of choice. This is just a starting point; go wild.
+Nope. If all you're after is livereload and autoprefixing, it just works out of the box. However, you can definitely add/replace with your tooling of choice.  
+This is just a starting point; go wild.
 
 ---
 

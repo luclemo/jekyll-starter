@@ -12,19 +12,24 @@ Nope this isn't a theme! I've been exploring jekyll lately and a few things anno
 
 You can think of this as the Goldilocks of starter projects and you can check it out here: [https://luclemo.github.io/jekyll-starter/](https://luclemo.github.io/jekyll-starter/)
 
-### OMG it's so ugly! 😱
+**OMG it's so ugly!** 😱
 
 Yup. that's the point. Now go make it gorgeous.
+
+---
 
 ## Features 🍬
 
 This is _not_ a theme. It's just a directory with some good starter bits:
 
-### A very basic file structure 📂
+### Super basic file structure 📂
 
-- I've included stuff nearly every project needs: a `404` and `about` page and useful config stuff.
-- Blog structure and permalinks are a pain to set up so I've included it.  
-Don't want/need a blog it? Just delete the `_posts` directory and `blog.md` file. Done. 
+I've included a few things common to many projects:
+
+- `404` and `about` page
+- Navigation logic
+- Heavily commented config file and useful site data
+- Blog structure and permalinks. Don't want/need a blog it? Just delete the `_posts` directory and `blog.html` file. Done. 
 
 ### Minimal styling 🎨
 
@@ -34,7 +39,9 @@ Don't want/need a blog it? Just delete the `_posts` directory and `blog.md` file
 
 ### Do I need Gulp … Grunt … PostCSS … la-la-la ? 👯
 
-- Nope. If all you're after is livereload and autoprefixing, it just works out of the box. However, you can definitely add/replace with your tooling of choice.
+Nope. If all you're after is livereload and autoprefixing, it just works out of the box. However, you can definitely add/replace with your tooling of choice. This is just a starting point; go wild.
+
+---
 
 ## Getting started 🚦
 
@@ -58,52 +65,103 @@ You will need some _very_ minimal command line abilities. You will also need to 
 
 ### Working locally 👩‍💻
 
-Fire it up in your browser:
+Fire up your project:
 
 ```text
 jekyll serve --config _config.yml,_config_dev.yml
 ```
 
+Files are served at `localhost:4000` from the `_site` directory.
+
 That's it! Just do your thing. Edit your CSS, add pages or posts, create layouts etc. Your browser will automatically reload to show you your changes.
 
-## Ready to deploy? 🚀
+### Editing files
 
-### Edit these two values in `_config.yml`
+#### AutoReload
 
-You will only need to do this once:
+All changes are compiled and auto-reloaded on save except edits to `_config.yml` and `_config_dev.yml`. You must restart the server when you change these files.
 
-1. If your site will be served from a subdirectory, add it here:
+---
 
-    ```text
-    baseurl: "/sub-directory"
-    ```  
+## Basic Hosting (FTP) 🚀
 
-    Otherwise leave a set of empty quotes:
+### 1. Configuration
 
-    ```text
-    baseurl: ""
-    ```
+_You should only have to do this once..._
 
-2. The hostname & protocol for your site:
+Open `_config.yml` file and edit the url and baseurl values for your host:
 
-    ```text
-    url: "https://yourdomain.com"
-    ```
+The hostname & protocol for your site:
 
+```text
+url: "https://yourdomain.com"
+```
 
-### Build step for production:
+If your site will be served from a subdirectory, add it here:
 
-Rebuild your files in `_site` with your new productions details:
+```text
+baseurl: "/sub-directory"
+```  
+
+Otherwise leave a set of empty quotes:
+
+```text
+baseurl: ""
+```
+
+### 2. Build step for production
+
+Rebuild your files with your new productions details:
 
 ```text
 jekyll build
 ```
 
-### Getting it on your server
+### 3. Getting it on your server
 
-Just upload the content of `_site` directory via FTP or use GitHub Pages or whatever you want.
+Just upload the content of `_site` directory via FTP.
 
-That's it you're done! 👏
+Visit your site at `yourdomain.com` 👏
+
+---
+
+## Hosting on Github 😺
+
+### 1. Configuration
+
+_You should only have to do this once..._
+
+Open `_config.yml` file and edit the `url` and `baseurl` values for Github:
+
+```text
+url: "http://username.github.io"
+
+baseurl: "/repository-name"
+```
+
+### 2. Edit repo settings
+
+In the `settings` tab for your repo, point Github pages `source` to your `master branch`.
+
+_Alternatively create/use another branch._
+
+### 3. Push your changes
+
+Commit and push recent changes.
+
+### 4. See your site live
+
+Give it a few minutes and your site should be live at
+
+`http://username.github.io/repository`
+
+### 5. Making Updates
+
+- Fire up your [local server](#working-locally------------)
+- Make your changes
+- Push your changes
+
+Github pages automatically runs the build process for you when you commit.
 
 ## I have questions, complaints, high-fives…!
 

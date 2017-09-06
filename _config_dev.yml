@@ -1,5 +1,6 @@
 ################################################################
 # This is the DEVELOPMENT config file.
+# Any settings here will override those in _config.yml
 # 
 # Run this command to work locally:
 # `jekyll serve --config _config.yml,_config_dev.yml`
@@ -14,35 +15,13 @@ host: 127.0.0.1
 baseurl: "" # ex: `/project` if serving from `http://localhost:4000/project/`
 url: "" # the base hostname & protocol for your site (can leave it blank for local dev)
 
+# Environment - use this in your logic:
+# {% if site.environment == "development" %} do things {% endif %}
+environment: development
+
 # livereload
 livereload: true # Watch your browser reload upon changes
-#incremental: true # Will only rebuild changed files. Can be buggy so  ¯\_(ツ)_/¯.
-
-# Outputting
-permalink: /blog/:title/
 
 # Build settings
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-markdown: kramdown
 sass:
-  style: compressed
-highlighter: rouge
-autoprefixer:
-  browsers:
-  - last 2 versions
-
-# Inlcudes & excludes
-include: ["_pages"] # custom directory to organize pages
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
-# Plugins
-plugins:
-- jekyll-autoprefixer
+  style: expanded # options: nested, compact, expanded, compressed
